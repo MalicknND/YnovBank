@@ -1,0 +1,31 @@
+<div class="min-h-screen flex items-center justify-center">
+  <form
+    action="/login"
+    method="POST"
+    class="bg-white p-6 rounded shadow-md w-full max-w-sm"
+  >
+    <h1 class="text-xl font-bold mb-4">Connexion</h1>
+    <label class="block mb-2">
+      <span class="text-gray-700">Email</span>
+      <input
+        type="email"
+        name="email"
+        required
+        class="mt-1 block w-full border border-gray-300 rounded px-3 py-2"
+      />
+    </label>
+    <label class="block mb-4">
+      <span class="text-gray-700">Mot de passe</span>
+      <input
+        type="password"
+        name="password"
+        required
+        class="mt-1 block w-full border border-gray-300 rounded px-3 py-2"
+      />
+    </label>
+    <button
+      type="submit"
+      class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full"
+    >Se connecter</button>
+  </form>
+</div>
