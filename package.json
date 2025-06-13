@@ -2,35 +2,33 @@
   "name": "ynovbank",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://github.com/MalicknND/YnovBank#readme",
-  "bugs": {
-    "url": "https://github.com/MalicknND/YnovBank/issues"
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/src/server.js",
+    "dev": "nodemon src/server.ts"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MalicknND/YnovBank.git"
   },
-  "license": "ISC",
+  "keywords": [],
   "author": "",
+  "license": "ISC",
   "type": "commonjs",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon --exec ts-node-dev src/index.ts",
-    "build": "tsc",
-    "start": "node dist/index.js"
+  "bugs": {
+    "url": "https://github.com/MalicknND/YnovBank/issues"
+  },
+  "homepage": "https://github.com/MalicknND/YnovBank#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "hbs": "^4.2.0"
   },
   "devDependencies": {
     "@types/express": "^5.0.3",
-    "@types/node": "^24.0.1",
+    "@types/hbs": "^4.0.5",
     "nodemon": "^3.1.10",
-    "ts-node-dev": "^2.0.0",
+    "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
-  },
-  "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^16.5.0",
-    "express": "^5.1.0",
-    "sqlite3": "^5.1.7"
   }
 }
