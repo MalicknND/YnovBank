@@ -14,6 +14,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "..", "public")));
 
 // Routes
+app.get("/", (req, res) => {
+  res.render("index", { layout: "layouts/main", title: "Accueil" });
+});
+
 app.get("/login", (req, res) => {
   res.render("login", { layout: "layouts/main", title: "Connexion" });
 });
